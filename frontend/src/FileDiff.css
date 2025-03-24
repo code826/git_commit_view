@@ -1,0 +1,84 @@
+.file-diff {
+    font-family: monospace;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .file-header {
+    background: #f7f7f7;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .file-header:hover {
+    background: #eaeaea;
+  }
+  
+  .file-content {
+    padding: 10px;
+    background: #fff;
+  }
+  
+  .hunk {
+    margin-bottom: 10px;
+  }
+  
+  .hunk-header {
+    background: #eee;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
+  .hunk-content {
+    padding: 5px;
+  }
+  
+  .line {
+    display: flex;
+    align-items: center;
+    padding: 2px 5px;
+    font-family: monospace;
+  }
+  
+  .line-number {
+    width: 40px;
+    text-align: right;
+    padding-right: 10px;
+    color: #6a737d;
+  }
+  
+  .symbol {
+    font-weight: bold;
+    width: 15px;
+  }
+  
+  .line.added {
+    background: #e6ffed;
+    color: #22863a;
+  }
+  
+  .line.deleted {
+    background: #ffeef0;
+    color: #b31d28;
+  }
+  
+  .line.unchanged {
+    background: #f6f8fa;
+  }
+  
+  .content {
+    margin-left: 5px;
+    display: flex;
+  }
+
+  .commit-details{
+    margin-left: 10px;
+  }
+  
+  .color-link{
+    color: #1C7CD6
+  }

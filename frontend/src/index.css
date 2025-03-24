@@ -1,0 +1,92 @@
+.info-line {
+  display: flex;
+  align-items: center;
+  gap: 3px; /* Reduced gap for compact layout */
+  white-space: nowrap; /* Prevents wrapping */
+  margin-bottom: 8px; /* Adds spacing between lines */
+}
+
+.label {
+  color: #1E88E5; /* Blue color for labels */
+  font-weight: bold;
+}
+
+.value {
+  color: #333; /* Darker color for values */
+  font-weight: 500;
+}
+
+.outer-block {
+  display: flex;
+  gap: 12px; /* Slightly increased gap between left and right sections */
+  padding: 12px; /* Adjusted padding */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1100px; /* Increased width */
+  margin: auto;
+}
+
+.left-block {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right-block {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #444;
+  gap: 12px; /* 🔥 Adds spacing between Commit, Parent, and other elements */
+}
+
+.avatar {
+  width: 45px; /* Slightly larger avatar */
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .outer-block {
+    flex-direction: column;
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .left-block, .right-block {
+    width: 100%;
+  }
+
+  .info-line {
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+}
+
+
+.file-diff-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Space between different FileDiff components */
+  padding: 16px;
+  max-width: 1200px; /* Slightly wider */
+  margin: auto;
+}
+
+.outer-block-file-diff {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+  width: 100%;
+}
+
