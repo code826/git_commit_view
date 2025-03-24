@@ -33,7 +33,7 @@ If an invalid URL is entered, the user is redirected to the Info Page:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/code826/git_commit_view
    cd your-repo
    ```
 
