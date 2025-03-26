@@ -1,0 +1,54 @@
+
+ok for this project i choose node js as backend as we don't need any DB and all i prefer to use Node js because of handy
+also it doesn't require very heavy calcuation
+ do first i develop the backend in the backend i first udnerstanf the rest api of git and see what field i need to use 
+ to get the data provided in the two backend api you given
+ on lookign into it i got to know it can come from single rest api 
+ https://api.github.com/repos/${owner}/${repo}/commits/${oid}
+  so in the backend i created 3 api 
+  one for /all which give me both details basicDetails like author , commiter, change time and all and second one is diff details 
+  that give me hunks line changed and all
+
+  --IMAGE--
+
+  also as asked in documentation i have open two endpoint 
+  http://localhost:5000/repositories/{owner}/{repository}/commits/{oid}
+  for getting commitsInfo
+  --IMAGE--
+
+  http://localhost:5000/repositories/{owner}/{repository}/commits/{oid}/diff
+  for gettign commits diff 
+  --IMAGE--
+
+  ok so once i able to get it 
+  the most challenging part of it was to get the accurate regular expression to filter out line udnerstand the status and baseLine and headLine
+
+  so once it is done , i moved to frontend
+
+  frontend have not so many pages but there is repition like each file diff has same UI so i used react it is easy to setup and use and 2nd json data transfer 
+
+  so in frontend i created 4 compoentn
+  App --> to handle route ( like if url is incorrect redirect it to info Page where i have mention what tolook for )
+  CommitPage --> to make api call 
+
+  Setup 
+  after unzipping the file your system should have node js try use node js of version 21.5.0 to avoid any packages issues
+
+after unzipping it just go and run npm run setup
+it will itself start it by default backend will use PORT = 80001 if any process is running on it just change the 
+backend/.env --> PORT and re run it 
+
+ once script will start you can see it running 
+
+--image--
+--image--
+
+
+Improvement 
+ i believe there are few scope of Improvement
+ first is UI , we can make it compatible with every screen and make it looks more good 
+ option to compare with different commit Id
+ search option to get the repo name once someone enter the username
+
+ suggestion of high rated reposiroty on bu default we can do so 
+  
